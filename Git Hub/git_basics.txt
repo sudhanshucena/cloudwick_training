@@ -1,0 +1,30 @@
+GIT HUB : Version control system
+
+resource : https://www.atlassian.com/git/tutorials/saving-changes/git-add
+			https://guides.github.com/introduction/flow/
+
+
+----------- Everything is local-------------------------------
+1. git init -> to initiate the folder as a git repository
+2. git status -> to check the changes made
+3. git add <file> -> Stage all changes in <file> for the next commit.
+4. git add <directory> -> Stage all changes in <directory> for the next commit.
+5. git commit -> add the file ( note it is saved offline locally untill actually uploaded to the repository)
+6. git log -> check the log until now
+----------------------------------------------------
+
+--------- Actually creating repository online and pushing---------
+
+7. git remote add origin <http:\\ git repository file> ->  add the repository
+	resource : https://help.github.com/articles/adding-a-remote/
+
+8. git remote -v -> verify the repository
+
+9. git push origin master -> push to the master branch
+
+10. 
+
+
+
+Git Branches:
+	One can move from a particular code to a different file hypothetically similar to branching out from a tree node.
