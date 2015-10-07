@@ -22,7 +22,11 @@ resource : https://www.atlassian.com/git/tutorials/saving-changes/git-add
 
 9. git push origin master -> push to the master branch
 
-10. 
+10. git checkout -b "issue 1"-> create a new branch with the name of the branch as 'issue 1'.
+
+11. To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin <issue_1>  : note issue_1 is branch name
 
 
 
