@@ -1,4 +1,4 @@
-GIT HUB : Version control system
+GIT HUB : Version control system ( Edited by Sudhanshu )
 
 resource : https://www.atlassian.com/git/tutorials/saving-changes/git-add
 			https://guides.github.com/introduction/flow/
@@ -28,7 +28,20 @@ resource : https://www.atlassian.com/git/tutorials/saving-changes/git-add
 
     git push --set-upstream origin <issue_1>  : note issue_1 is branch name
 
+----------------------------------------------------------------------------------
+
+
+--------------------------- Collaborator------------------------------------------
+Create a Merge request : add a new collaborator who can review and comment the code.
 
 
 Git Branches:
 	One can move from a particular code to a different file hypothetically similar to branching out from a tree node.
+
+
+
+
+
+
+--------------------------- LOG OR VERSIONING OF THE FILE-----------------
+Original Version : Author: Sudhanshu
