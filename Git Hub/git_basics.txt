@@ -1,8 +1,8 @@
-GIT HUB : Version control system
+GIT HUB : Version control system ( Edited by Sudhanshu )
 
 resource : https://www.atlassian.com/git/tutorials/saving-changes/git-add
 			https://guides.github.com/introduction/flow/
-
+			https://guides.github.com/activities/hello-world/
 
 ----------- Everything is local-------------------------------
 1. git init -> to initiate the folder as a git repository
@@ -28,7 +28,49 @@ resource : https://www.atlassian.com/git/tutorials/saving-changes/git-add
 
     git push --set-upstream origin <issue_1>  : note issue_1 is branch name
 
+----------------------------------------------------------------------------------
+
+
+------------------------------- Some Error Debugging -----------------------------
+1. fatal: 'Sudhanshu' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+sudhanshu@sudhanshu-Inspiron-5547:~/Desktop/Cloudwick Training$ git commit -a
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+
+  2. git push --set-upstream "Sudhanshu"
+
+
+  	fatal: 'Sudhanshu' does not appear to be a git repository
+	fatal: Could not read from remote repository.
+
+	Please make sure you have the correct access rights
+	and the repository exists.
+
+	(The reposiroty does not exist. Either create a repository online by logging on to the github or ....)
+
+
+
+--------------------------- Collaborator------------------------------------------
+Create a Merge request : add a new collaborator who can review and comment the code.
 
 
 Git Branches:
 	One can move from a particular code to a different file hypothetically similar to branching out from a tree node.
+
+
+
+
+
+
+--------------------------- LOG OR VERSIONING OF THE FILE-----------------
+Original Version : Author: Sudhanshu
