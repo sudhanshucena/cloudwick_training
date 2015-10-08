@@ -28,23 +28,30 @@ resource : https://www.atlassian.com/git/tutorials/saving-changes/git-add
 
     git push --set-upstream origin <issue_1>  : note issue_1 is branch name
 
+12. 
+	sudhanshu@sudhanshu-Inspiron-5547:~/Desktop/Cloudwick Training/Git Hub$ git branch
+* Sudhanshu    (shows * to represent the current branch)
+  master
+  sudhanshu
+    
+
 ----------------------------------------------------------------------------------
 
 
 ------------------------------- Some Error Debugging -----------------------------
 1. fatal: 'Sudhanshu' does not appear to be a git repository
-fatal: Could not read from remote repository.
+	fatal: Could not read from remote repository.
 
-Please make sure you have the correct access rights
-and the repository exists.
-sudhanshu@sudhanshu-Inspiron-5547:~/Desktop/Cloudwick Training$ git commit -a
+	Please make sure you have the correct access rights
+	and the repository exists.
+	sudhanshu@sudhanshu-Inspiron-5547:~/Desktop/Cloudwick Training$ git commit -a
 
 *** Please tell me who you are.
 
 Run
 
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
+	git config --global user.email "you@example.com"
+	git config --global user.name "Your Name"
 
 
   2. git push --set-upstream "Sudhanshu"
@@ -58,6 +65,29 @@ Run
 
 	(The reposiroty does not exist. Either create a repository online by logging on to the github or ....)
 
+
+3. Amending the commit message
+
+	git commit --amend
+
+	Will open your editor, allowing you to change the commit message of the most recent commit. Additionally, you can set the commit message directly in the command line with:
+
+	git commit --amend -m "New commit message"
+
+	…however, this can make multi-line commit messages or small corrections more cumbersome to enter.
+
+	Make sure you don't have any working copy changes before doing this or they can get committed too.
+	Changing the message of a commit that you've already pushed to your remote branch
+
+	If you've already pushed your commit up to your remote branch, then you'll need to force push the commit with
+
+	git push <remote> <branch> --force
+	# Or
+	git push <remote> <branch> -f
+
+	Warning: force-pushing will overwrite the remote branch with the state of your local one. If there are commits on the remote branch that you don't have in your local branch, you will lose those commits.
+
+	Warning: be cautious about amending commits that you have already shared with other people. Amending commits essentially rewrites them to have different SHA IDs, which poses a problem if other people have copies of the old commit that you've rewritten. Anyone who has a copy of the old commit will need to re-synchronize their work with your newly re-written commit, which can sometimes be difficult, so make sure you coordinate with others when attempting to rewrite shared commit history, or just avoid rewriting shared commits altogether.
 
 
 --------------------------- Collaborator------------------------------------------
